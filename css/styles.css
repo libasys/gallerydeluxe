@@ -1,0 +1,568 @@
+#loading {
+	position:absolute; z-index:1000;top:0;left:0; display: none; width:100%;height:100%;background:rgba(0,0,0,0.2);
+	text-align:center;
+	color:#fff;
+	font-size:100px;
+}
+
+.loadingImg{
+	display:block;
+	background:#fff;
+	padding:1px;
+	position: relative;
+	float:left;
+	
+}
+
+
+
+div.cover{
+	width:20px;
+	height:20px;
+	display:block;
+	float:right;
+	
+	position:absolute;
+	top:0;
+	right:0;
+	line-height:20px;
+	text-align:center;
+	background:#DF5A00;
+	font-weight:bold;
+	
+	opacity:0.8;
+	color:white;
+}
+
+img.scale {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+
+  width: auto\9; /* ie8+9 */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic; 
+}
+
+a.share{
+	line-height:28px;
+	text-align:center;
+}
+a.share i.ioc{
+	margin:2px;
+}
+.ioc-spinner{
+	color:#000;
+}
+
+#content-wrapper {
+	overflow-x: auto;
+}
+
+
+#gallery.hascontrols {
+	overflow: hidden;
+	text-align: justify;
+	top: 44px;
+	padding-bottom: 100px;
+	
+}
+
+#gallery .row {
+	line-height: 0;
+	float:left;
+	white-space: nowrap;
+	
+}
+
+
+
+#gallery .row a.album:first-child {
+	margin-left: 2px;
+}
+
+#gallery .row a.image,#gallery a.album {
+	display: inline-block;
+	height: auto;
+	padding: 0;
+	margin: 2px;
+	z-index:2;
+}
+#loaderCaching{
+	position:fixed;
+	width:450px;
+	left:50%;
+	margin-left:-225px;
+	background:orange;
+	text-align:center;
+	height:40px;
+	line-height:20px;
+	float:left;
+	display:none;
+}
+
+
+ 
+#gallery a.album > img {
+	max-width: 200px;
+	max-height: 200px;
+    z-index:2;
+}
+/*
+#gallery a.image img{
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:40px;
+	border:1px solid #ccc;
+}*/
+
+#gallery a.album a.share{
+	display:none;
+}
+
+#gallery a.album:hover a.share{
+	display:block;
+}
+#gallery a.album > label.descr,#gallery a.image > label.descr {
+	
+	text-shadow: 0 0 2px rgb(0, 0, 0);
+	background:rgba(0,0,0,0.5);
+	display:block;
+	position: absolute;
+	bottom:0px;
+	left:1px;
+	width:100%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	overflow-x: hidden;
+	height:30px;
+	z-index: 11;
+	text-transform:capitalize;
+}
+
+
+
+#gallery a.album label.descr a.album-name{
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	width: 80%;
+	color:#fff;
+	height:20px;
+	line-height:20px;
+	
+}
+
+#gallery a.album label.descr i.ioc
+{
+ 	color:#fff;
+ 	font-size:20px;
+ 	float:left;
+ 	width:20px;
+ 	display:block;
+ 	line-height:18px;
+ 	height:20px;
+ 	right:20px;
+ 	text-shadow:none;
+ 	
+ }
+ #gallery a.image label.descr span{
+ 	width:90%;
+ 	position:relative;
+ 	text-overflow: ellipsis;
+	overflow-x: hidden;
+	white-space:nowrap;
+ 	display:block;
+ 	float:left;
+ 	height:28px;
+ 	line-height:28px;
+ }
+#gallery a.image label.descr a.ioc{
+	font-size:16px;
+	width:10%;
+ 	display:block;
+ 	position:relative;
+ 	line-height:28px;
+ 	float:none;
+ 	height:28px;
+ 	color:#fff;
+	float:left;
+}
+#gallery a.album > label.descr i.ioc{
+	display:none;
+}
+#gallery a.album:hover  label.descr i.ioc{
+	display:block;
+}
+
+#gallery a.album > label.descr{
+	
+	margin-left:-1px;
+}
+#gallery a.image > label.descr {
+	font-size: 12px;
+	bottom: 0px;
+	left:0;
+	padding: 0px;
+	line-height:26px;
+	height:30px;
+	color:#fff;
+	display:none;	
+}
+
+#gallery a.image:hover label.descr {
+	
+	display:block;	
+}
+
+#gallery a.image:hover{
+	z-index:1000;
+	-moz-transform: scale(1.3); 
+    -webkit-transform: scale(1.3); 
+    -o-transform: scale(1.3); 
+    transform: scale(1.3);
+    -webkit-box-shadow:0 0 30px #000;
+	-moz-box-shadow:0 0 30px #000;
+	box-shadow:0 0 30px #000
+}
+
+#gallery a {
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	vertical-align: top;
+	*display: inline;
+	zoom: 1;
+}
+
+#gallery a.icon-sharedby {
+    background-image: url("../img/shared.svg");
+    background-size:16px 16px;
+     -webkit-background-size:16px 16px;
+     height:18px;
+     width:16px;
+
+}
+
+#gallery a.image > img {
+	max-height: 200px;
+	width: auto;
+}
+
+#gallery a.album,
+#gallery a.image {
+	opacity: 1;
+	transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	-webkit-transition: opacity 500ms;
+}
+
+#gallery a.album{
+	position: relative;
+	background:#fff;
+	margin-top:2px;
+	margin-left:0px;
+	margin-right:2px;
+	margin-bottom:1px;
+	background:transparent;
+}
+
+
+#gallery a.album img,#gallery a.album div.cropHeight{
+	position: relative;
+	float:left;
+	
+	
+}
+#gallery a.album.loading,
+#gallery a.image.loading {
+	opacity: 0;
+}
+
+#controls > .rightControls {
+	float: right;
+	padding-right:5px;
+}
+
+#gallery > h2 {
+	background: #f7f7f7;
+	height: 2.8em;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 0.5em;
+	padding-left: 2em;
+}
+
+
+
+button.sort, button.sortdate,button.batch{
+
+	font-weight:normal;
+	
+}
+
+#controls .toolTip{
+	font-size:14px;
+}
+
+
+.button-group > .button, .button-group > button {
+ 
+  position: relative;
+  float: left;
+  
+  margin: 4px 2px;
+ font-size:14px;
+ font-weight:normal;
+ line-height:16px;
+  padding: 3px 4px;
+  border:1px solid #CFCFCF;
+ box-shadow:none;
+  
+}
+
+
+#gallerysettings h3{
+	font-size:14px;
+	font-weight:bold;
+}
+/*Dark Design*/
+#body-user #content.dark-design, 
+#body-user #content.dark-design #gallery,
+#body-user #content.dark-design #controls,
+#body-public #content.dark-design,
+#body-public #content.dark-design #controls,
+#body-public #content.dark-design #gallery a.album,
+#body-public #content.dark-design .info
+{
+	background:#333;
+	opacity:1;
+	color:#fff;
+}
+
+#body-user #content.dark-design #breadcrumbs a{
+	color:#fff;
+} 
+
+#body-user #content.dark-design .ioc-spinner{
+	color:#fff;
+}
+
+#body-user #content.dark-design .button-group > button,
+#body-user #content.dark-design .button-group > .button
+{
+	background-color:#333;
+	border:1px solid rgba(0,0,0,0.3);
+	color:#fff;
+}
+
+
+#gallery #dropdown,
+#controls #dropdown,
+#slideshow #dropdown
+{
+	position:fixed;
+	right:0;
+	top:45px;
+	z-index:400;
+	height:100%;
+	max-width:350px;
+	color:#D3D3D3;
+	border-radius:none;
+	background-color:#666666;
+	box-shadow:-1px 1px 8px rgba(0,0,0,0.5);
+}
+#gallery #dropdown #infoShare,
+#controls #dropdown #infoShare,
+#slideshow #dropdown #infoShare
+{
+	position:relative;
+	display:block;
+	width:100%;
+	font-size:16px;
+	line-height: 30px;
+	height:30px;
+	border-bottom:1px solid#D3D3D3;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+#gallery #dropdown #infoShare div,
+#controls #dropdown #infoShare div,
+#slideshow #dropdown #infoShare div
+{
+	position:relative;
+	margin-left:5px;
+}
+#gallery #dropdown #infoShare #dropClose,
+#controls #dropdown #infoShare #dropClose,
+#slideshow #dropdown #infoShare #dropClose
+{
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	width:30px;
+	cursor:pointer;
+	height:30px;
+	font-size:22px;
+}
+
+#slideshow #dropdown
+{
+	top:0;
+	z-index:2020;
+
+}
+#dropdown label,
+#dropdown span,
+#dropdown a{
+	color:#D3D3D3;
+	line-height:20px;
+}
+
+#gallery a.album > a.share{
+	position:absolute;
+	bottom:4px;
+	right:5px;
+	z-index:12;
+	color:#fff;
+	font-size:18px;	
+}
+.ui-datepicker{
+	width: 250px;
+	padding:0;
+	margin:0;
+	padding: 4px 2px;
+	display: none;
+	border:none;
+	background:#fff;
+	border:none;
+	box-shadow: 0px 0px 5px #ccc;
+	
+	max-width:300px
+}
+
+.ui-datepicker-header.ui-widget-header{
+	border:none;
+	background:none;
+	color:#555555;
+	padding:0;
+	margin:0;
+	height:24px;
+	line-height:24px;
+	border-radius:0;
+	
+}
+
+.ui-datepicker-title{
+	font-size:12px;
+	padding:0;
+	margin:0;
+	height:24px;
+	line-height:24px;
+	
+}
+
+.ui-datepicker-calendar th{
+	background:#fff;
+	height:20px;
+	border-bottom:1px solid #ccc;
+	margin:0;
+	padding:0;
+	color:#555555;
+}
+.ui-datepicker table{
+	color:#555555;
+}
+.ui-datepicker td{
+	background:#fff;
+	text-align:center;
+	margin:0px;
+	padding-bottom:1px;
+	padding-right:2px;
+	color:#555555;
+}
+.ui-datepicker td a.ui-state-default,
+.ui-datepicker td span{
+	width:100%;
+	padding:0;
+	color:#555555;
+	margin:0;
+	font-weight:normal;
+	font-size:12px;
+	text-align:center;
+	border:none;
+	background:transparent;
+}
+.ui-datepicker .ui-datepicker-week-end{
+	background:#f4f4f4;
+}
+.ui-datepicker .ui-state-disabled span.ui-state-default{
+	border:none;
+	opacity:0.8;
+	color:#000;
+	font-weight:normal;
+}
+
+
+.ui-datepicker td a:hover{
+	background:#E8E8E8;
+	border-radius:5px;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next{
+ border:none;
+ border-radius:0;
+ margin-top:-4px;
+ width: 1.8em;
+ height: 1.8em;
+ background-color:#fff;
+}
+.ui-datepicker-prev{
+	margin-left:4px;
+}
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover{
+	border:1px solid #fff;
+}
+
+.ui-icon-circle-triangle-w,
+.ui-icon-circle-triangle-e{
+	background:none;
+	width: 0; 
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #ccc;
+}
+.ui-icon.ui-icon-circle-triangle-w{
+	border-right: 10px solid #ccc;
+	border-left:none;
+	background-position: 16px 16px;
+	
+}
+.ui-icon-circle-triangle-w:hover{
+	border-right: 10px solid #000;
+}
+.ui-icon-circle-triangle-e:hover{
+	border-left: 10px solid #000;
+}
+
+.ui-datepicker-calendar td.ui-datepicker-current-day a{
+	background:#D9F4B6;
+	color:#8DC63F;
+	border:none;
+	border-radius:5px;
+}
+.ui-datepicker-calendar td.ui-datepicker-today a{
+	background:#F8B9B7;
+	color:#B94A48;
+	border:none;
+	border-radius:5px;
+}
+

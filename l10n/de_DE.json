@@ -1,0 +1,26 @@
+{ "translations": {
+    "Pictures" : "Bilder",
+     "Gallery Dl" : "Galerie Dl",
+    "Picture view" : "Bildansicht",
+    "Error loading slideshow template" : "Fehler beim Laden der Slideshow-Vorlage",
+    "Share" : "Teilen",
+    "No pictures found! If you upload or rename a jpeg file to cover.jpg, the folder  will displayed as an album in your gallery!" : "Keine Bilder gefunden! Wenn Sie eine JPG Bilddatei in der Dateien App in cover.jpg umbennen, oder eine JPG Bilddatei in der Dateien App mit dem Namen cover.jpg hochladen, werden alle Bilder in diesem Ordner als Album in der Galerie geladen!",
+    "shared by %s" : "Geteilt von %s",
+    "File list" : "Dateiliste",
+    "Scan" : "Scannen",
+    "Regenerate" : "Neu Erstellen",
+    "Scan all thumbnails of album and create thumbnails size: 400px and" : "Scannt alle Vorschaubilder des Albums und erstellt Vorschaubilder in Größe: 400px und",
+    "Deletes and regenerates all thumbnails of a album new!" : "Löscht und erstellt alle Vorschaubilder eines Albums neu!",
+    "Name" : "Name",
+    "Date" : "Datum",
+    "sorty by name asc desc" : "Sortierung nach Dateinamen aufsteigend / absteigend",
+    "sorty by date asc desc" : "Sortierung nach Dateidatum aufsteigend / absteigend",
+    "Show directory content in files app" : "Ordnerinhalt in der Dateien App anzeigen",
+    "Delete all thumbnails of" : "Lösche alle Vorschaubilder von",
+    "Preview 400px and Preview Max exist  for" : "Vorschaubilder 400px und Max sind bereits vorhanden für",
+    "Generating Preview 400px and Preview Max" : "Erstelle Vorschaubilder 400px und Max",
+    "for" : "für",
+    "Success editing IPTC Metadata!" : "IPTC Metadaten erfolgreich aktualisiert!",
+    "Error! No Write Access! Missing Permissions!" : "Fehler! Keine Schreibrechte! Fehlende Berechtigungen!"
+    },"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
