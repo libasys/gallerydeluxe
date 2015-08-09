@@ -45,6 +45,7 @@ class PageController extends Controller {
 		\OCP\Util::addScript($this->appName, 'album');
 		\OCP\Util::addScript($this->appName, 'gallery');
 		\OCP\Util::addScript($this->appName, 'thumbnail');
+		\OCP\Util::addScript($this->appName, 'header-color');
 
 		$config = \OC::$server -> getConfig();
 		$csp = new \OCP\AppFramework\Http\ContentSecurityPolicy();
