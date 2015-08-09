@@ -247,6 +247,18 @@ a.share i.ioc{
 	-o-transform-origin: right;
 	transform-origin: right;
 }
+#gallery div.row:first-child>a:first-child:hover{
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	transform-origin: top left;
+}
+#gallery div.row:first-child>a:last-child:hover{
+	-moz-transform-origin: top right;
+	-webkit-transform-origin: top right;
+	-o-transform-origin: top right;
+	transform-origin: top right;
+}
 
 #gallery a {
 	display: inline-block;
